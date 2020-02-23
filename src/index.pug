@@ -1,0 +1,46 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Signup
+	body
+		page.wrapper
+			.logo
+				p.logo__text Sign up
+			.userInfo
+				.userInfo__title
+					.userInfo__titleText New user?
+					.userInfo__titleDescribe Use the form below to create your account.
+				form.userInfo__form(name="Signup")
+					fieldset.userInfo__block
+						label(class="userInfo__label" for="LastName") Last Name
+						input(type="text" name="LastName")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="FirstName") Last Name
+						input(type="text" name="FirstName")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="Country") Nationality
+						select(name="Country")
+							option
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="email") E-mail
+						input(type="email" name="email")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="date") Date of Birth
+						input(type="date" name="date")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label") Gender
+							label(class="userInfo__label" for="Male") Male
+								input(type="radio" name="Male")
+							label(class="userInfo__label" for="Female") Female
+								input(type="radio" name="Female")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="Password") Password
+						input(type="Password" name="Password")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label" for="ConfirmPassword") Confirm Password
+						input(type="Password" name="ConfirmPassword")
+					fieldset(class="userInfo__block")
+						label(class="userInfo__label") Have an account?
+							a(class="userInfo__link") Login
+						input(type="submit" name="submit" value="Complete Signup")

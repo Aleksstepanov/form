@@ -21,9 +21,9 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist'),
         port : 4200,
         hot : isDev,
-        index : 'colorandtype.html',
+        index : 'index.html',
         //watchContentBase : true,
-        openPage : 'colorandtype.html',
+        openPage : 'index.html',
         //publicPath: 'http://localhost:4200/assets/',
         watchOptions: {
             poll: true
@@ -95,13 +95,13 @@ module.exports = {
     },
     plugins : [
         new MiniCssExtractPlugin({
-            filename : '[name].css'
+            filename : 'css/[name].css'
         }),
         new HtmlWebpackPlugin(
             {
             hash : false,
-            template : './page/colorandtype/colorandtype.pug',
-            filename : 'colorandtype.html',
+            template : './index.pug',
+            filename : 'index.html',
             minify : {
                 collapseWhitespace : isProv
             },
