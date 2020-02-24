@@ -1,2 +1,2 @@
-require('./index.scss')
-require('./country');
+require('./scss/index.scss')
+require('./js/country');

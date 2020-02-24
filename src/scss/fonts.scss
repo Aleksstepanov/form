@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'WorkSans-Regular';
+	src: url('/assets/fonts/WorkSans-Regular/WorkSans-Regular.eot') format('eot'),
+			 url('/assets/fonts/WorkSans-Regular/WorkSans-Regular.ttf') format('ttf'),
+			 url('/assets/fonts/WorkSans-Regular/WorkSans-Regular.woff') format('woff'),
+			 url('/assets/fonts/WorkSans-Regular/WorkSans-Regular.woff2') format('woff2');
+	font-style: normal;
+		 
+}
+@font-face {
+	font-family: 'WorkSans-Light';
+	src: url('/assets/fonts/WorkSans-Light/WorkSans-Light.eot') format('eot'),
+			 url('/assets/fonts/WorkSans-Light/WorkSans-Light.ttf') format('ttf'),
+			 url('/assets/fonts/WorkSans-Light/WorkSans-Light.woff') format('woff'),
+			 url('/assets/fonts/WorkSans-Light/WorkSans-Light.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 300;		 
+}
+@font-face {
+	font-family: 'PTSans-Regular', sans-serif;
+	src: url('/dist/assets/fonts/PTSans-Regular/PTSans-Regular.eot') format('eot'),
+			 url('/dist/assets/fonts/PTSans-Regular/PTSans-Regular.ttf') format('ttf'),
+			 url('/dist/assets/fonts/PTSans-Regular/PTSans-Regular.woff') format('woff'),
+			 url('/dist/assets/fonts/PTSans-Regular/PTSans-Regular.woff2') format('woff2');
+			 
+	font-style: normal;
+	font-weight: normal;		 
+}

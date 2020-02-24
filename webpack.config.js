@@ -112,13 +112,18 @@ module.exports = {
         new CopyWebpackPlugin(
             [
                 {
-                    from : path.join(__dirname, 'src', 'assets', 'fonts'),
-                    to : path.join(__dirname, 'dist', 'assets', 'fonts')
-                },
-                {
-                    from : path.join(__dirname, 'src', 'blocks', 'logo', 'img'),
-                    to : path.join(__dirname, 'dist', 'img')
-                }
+                    from : path.join(__dirname, 'src', 'assets', 'WorkSans-Light'),
+                    to : path.join(__dirname, 'dist', 'assets', 'fonts', 'WorkSans-Light')
+								},
+								{
+										from : path.join(__dirname, 'src', 'assets', 'WorkSans-Regular'),
+										to : path.join(__dirname, 'dist', 'assets', 'fonts', 'WorkSans-Regular')
+								},
+								{
+									from : path.join(__dirname, 'src', 'assets', 'PTSans_Regular'),
+									to : path.join(__dirname, 'dist', 'assets', 'fonts', 'PTSans-Regular')
+							}
+              
             ]
         ),
         //new CleanWebpackPlugin (),

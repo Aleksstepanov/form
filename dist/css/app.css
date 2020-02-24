@@ -1,1 +1,105 @@
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("/assets/fonts/WorkSans-Regular/WorkSans-Regular.eot") format("eot"), url("/assets/fonts/WorkSans-Regular/WorkSans-Regular.ttf") format("ttf"), url("/assets/fonts/WorkSans-Regular/WorkSans-Regular.woff") format("woff"), url("/assets/fonts/WorkSans-Regular/WorkSans-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("/assets/fonts/WorkSans-Light/WorkSans-Light.eot") format("eot"), url("/assets/fonts/WorkSans-Light/WorkSans-Light.ttf") format("ttf"), url("/assets/fonts/WorkSans-Light/WorkSans-Light.woff") format("woff"), url("/assets/fonts/WorkSans-Light/WorkSans-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "PTSans-Regular", sans-serif;
+  src: url("/dist/assets/fonts/PTSans-Regular/PTSans-Regular.eot") format("eot"), url("/dist/assets/fonts/PTSans-Regular/PTSans-Regular.ttf") format("ttf"), url("/dist/assets/fonts/PTSans-Regular/PTSans-Regular.woff") format("woff"), url("/dist/assets/fonts/PTSans-Regular/PTSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+.wrapper {
+  background: #F2F2F2;
+  margin: 0 auto;
+  display: flex;
+  max-width: 624px;
+}
 
+.logo {
+  background: #5A61ED;
+  bottom: 0.11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.logo__text {
+  font-family: "PTSans-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 63px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+  text-align: end;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo__titleText {
+  font-family: "WorkSans-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: -0.46px;
+  color: #111111;
+}
+
+.userInfo__titleDescribe {
+  font-family: "WorkSans-Light";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+}
+
+.userInfo__form {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.userInfo__wrapper {
+  display: flex;
+}
+
+.userInfo__block {
+  border: none;
+  width: 45%;
+  display: flex;
+}
+
+.userInfo__label {
+  font-family: "WorkSans-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #7C7C7C;
+  display: block;
+}
+
+.baseInput {
+  width: 100%;
+  border: none;
+}
