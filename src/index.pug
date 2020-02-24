@@ -29,10 +29,13 @@ html(lang="en")
 							input(type="email" name="email" class="baseInput" id="email")
 					.userInfo__wrapper
 						fieldset(class="userInfo__block")
-							label(class="userInfo__label" for="date") Date of Birth
-							input(type="date" name="date" class="baseInput" id="date")
+							legend(class="userInfo__label") Date of Birth
+								select(name="day" class="Day")
+								select(name="month" class="Month")
+								select(name="year" class="Year")
 						fieldset(class="userInfo__block")
 							legend(class="userInfo__legend") Gender
+							.userInfo__GenderWrapper
 								label(class="userInfo__label-Gender") Male
 									input(name="Gender" type="radio" value="Male")
 								label(class="userInfo__label-Gender") Female
@@ -45,7 +48,8 @@ html(lang="en")
 							label(class="userInfo__label" for="ConfirmPassword") Confirm Password
 							input(type="Password" name="ConfirmPassword" class="baseInput" id="ConfirmPassword")
 					.userInfo__wrapper
-						fieldset(class="userInfo__block")
-							label(class="userInfo__label") Have an account?
-								a(class="userInfo__link") Login
-							input(type="submit" name="submit" value="Complete Signup" class="baseInput")
+						div(class="userInfo__block-footer")
+							.userInfo__title-footer
+								p(class="userInfo__label-footer") Have an account? 
+									a(class="userInfo__link") Login
+							input(type="submit" name="submit" value="Complete Signup" class="baseInput submit")

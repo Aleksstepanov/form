@@ -16,15 +16,22 @@
   font-weight: normal;
 }
 .wrapper {
-  background: #F2F2F2;
-  margin: 0 auto;
   display: flex;
+  height: 480px;
+  margin: 0 auto;
   max-width: 624px;
+  background: #F2F2F2;
+  padding-top: 150px;
+}
+
+.userInfo__form {
+  margin-left: 24px;
+  margin-bottom: 50px;
 }
 
 .logo {
+  width: 22%;
   background: #5A61ED;
-  bottom: 0.11%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -32,7 +39,9 @@
 }
 
 .logo__text {
-  font-family: "PTSans-Regular", sans-serif;
+  padding-top: 88px;
+  margin-bottom: 25px;
+  font-family: "PTSans-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 49px;
@@ -40,26 +49,31 @@
   letter-spacing: 0.5px;
   color: #FFFFFF;
   transform: rotate(-90deg);
-  text-align: end;
+  white-space: nowrap;
+  padding-right: 20px;
 }
 
 .userInfo {
+  width: 78%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .userInfo__title {
+  margin-top: 40px;
+  margin-left: 21px;
+  height: 16%;
   display: flex;
   flex-direction: column;
 }
 
 .userInfo__titleText {
-  font-family: "WorkSans-Regular", sans-serif;
+  font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  /* identical to box height */
   letter-spacing: -0.46px;
   color: #111111;
 }
@@ -67,15 +81,14 @@
 .userInfo__titleDescribe {
   font-family: "WorkSans-Light";
   font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   color: #111111;
 }
 
 .userInfo__form {
-  display: flex;
-  flex-direction: column;
-  background: #FFFFFF;
+  height: 74%;
 }
 
 .userInfo__wrapper {
@@ -83,27 +96,86 @@
 }
 
 .userInfo__block {
-  border: none;
   width: 45%;
   display: flex;
+  border: none;
+  margin-top: 20px;
 }
 
-.userInfo__label {
+.userInfo__legend {
   font-family: "WorkSans-Light";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
   color: #7C7C7C;
-  display: block;
+}
+
+.userInfo__label-Gender {
+  font-family: "WorkSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
 }
 
 .baseInput {
   width: 100%;
   border: none;
+  font-family: "WorkSans-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  height: 16px;
+  background-color: #FFFFFF;
 }
 
-.userInfo__legend {
+.userInfo__label {
+  height: 14px;
+  font-family: "WorkSans-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+  border: none;
+}
+
+.userInfo__block-footer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  flex-wrap: nowrap;
+  border: none;
+}
+
+.userInfo__label-footer {
+  height: 15px;
+  font-family: "WorkSans-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.submit {
+  width: 154px;
+  height: 32px;
+  background: #5A61ED;
+  border: 0.5px solid #FFFFFF;
+  font-family: "PTSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.userInfo__title-footer {
+  width: 45%;
 }
