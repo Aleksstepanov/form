@@ -103,3 +103,7 @@
   width: 100%;
   border: none;
 }
+
+.userInfo__legend {
+  width: 100%;
+}

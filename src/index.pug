@@ -15,35 +15,35 @@ html(lang="en")
 					.userInfo__wrapper
 						fieldset.userInfo__block
 							label(class="userInfo__label" for="LastName") Last Name
-							input(type="text" name="LastName" class="baseInput")
+							input(type="text" name="LastName" class="baseInput" id="LastName")
 						fieldset(class="userInfo__block")
-							label(class="userInfo__label" for="FirstName") Last Name
-							input(type="text" name="FirstName" class="baseInput")
+							label(class="userInfo__label" for="FirstName") First Name
+							input(type="text" name="FirstName" class="baseInput" id="FirstName")
 					.userInfo__wrapper
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label" for="Country") Nationality
-								select(name="Country" size="1" class="baseInput")
+								select(name="Country" size="1" class="baseInput" id="Country")
 								
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label" for="email") E-mail
-							input(type="email" name="email" class="baseInput")
+							input(type="email" name="email" class="baseInput" id="email")
 					.userInfo__wrapper
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label" for="date") Date of Birth
-							input(type="date" name="date" class="baseInput")
+							input(type="date" name="date" class="baseInput" id="date")
 						fieldset(class="userInfo__block")
 							legend(class="userInfo__legend") Gender
-								label(class="userInfo__labelGender" for="Male") Male
-									input(type="radio" name="Male" class="baseInput")
-								label(class="userInfo__labelGender" for="Female") Female
-									input(type="radio" name="Female" class="baseInput")
+								label(class="userInfo__label-Gender") Male
+									input(name="Gender" type="radio" value="Male")
+								label(class="userInfo__label-Gender") Female
+									input(name="Gender" type="radio" value="Female") 
 					.userInfo__wrapper
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label" for="Password") Password
-							input(type="Password" name="Password" class="baseInput")
+							input(type="Password" name="Password" class="baseInput" id="Password")
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label" for="ConfirmPassword") Confirm Password
-							input(type="Password" name="ConfirmPassword" class="baseInput")
+							input(type="Password" name="ConfirmPassword" class="baseInput" id="ConfirmPassword")
 					.userInfo__wrapper
 						fieldset(class="userInfo__block")
 							label(class="userInfo__label") Have an account?
