@@ -56,6 +56,10 @@ module.exports = {
                         loader : 'css-loader'
                     },
                     {
+                        loader: 'postcss-loader',
+                        options: {config: { path: 'src/js/postcss.config.js' } }
+                      },
+                    {
                         loader : 'sass-loader'
                     }
 
@@ -69,6 +73,10 @@ module.exports = {
                     {
                         loader : 'css-loader'
                     },
+                    {
+                        loader: 'postcss-loader',
+                        options: {config: { path: 'src/js/postcss.config.js' } }
+                      }
                     
 
                 ]
@@ -89,7 +97,10 @@ module.exports = {
             },
             {//pug
                 test : /\.pug$/,
-                loader : 'pug-loader'
+								loader : 'pug-loader',
+								options : {
+									minify : false
+								}
             }
         ]
     },
@@ -99,7 +110,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin(
             {
-            hash : false,
+						hash : false,
+						minify : false,
             template : './index.pug',
             filename : 'index.html',
             minify : {
@@ -122,7 +134,11 @@ module.exports = {
 								{
 									from : path.join(__dirname, 'src', 'assets', 'PTSans_Regular'),
 									to : path.join(__dirname, 'dist', 'assets', 'fonts', 'PTSans-Regular')
-							}
+								},
+								{
+									from : path.join(__dirname, 'src', 'assets', 'img'),
+									to : path.join(__dirname, 'dist', 'assets', 'img')
+								}
               
             ]
         ),

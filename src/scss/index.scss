@@ -6,18 +6,18 @@
 	display: flex;
 	height: 480px;
 	margin: 0 auto;
-	max-width: 624px;
+	max-width: 665px;
 	background: #F2F2F2;
-	padding-top: 150px;
+	margin-top: 150px;
 }
 .userInfo__form {
-	margin-left: 24px;
-	margin-bottom: 50px;
+	margin-bottom: 53px;
+    margin-left: 9px;
 }
 
 //стилизуем левый блок с лого
 .logo {
-	width: 22%;
+	width: 20.7%;
 	background: #5A61ED;
 	//перенесем текст вниз блока logo
 	display: flex;
@@ -26,6 +26,7 @@
 	align-items: flex-end;
 }
 .logo__text {
+	width: 100%;
 	padding-top: 88px;
 	margin-bottom: 25px;
 	font-family: 'PTSans-Regular';
@@ -38,14 +39,148 @@
 	transform: rotate(-90deg);
 	white-space: nowrap;//чтобы текст не переносился
 	padding-right: 20px;
+	
+}
+@keyframes type{
+	from { width: 0%; }
+	to {width: 100%;}
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }
 }
 
+
+//анимация блоков и perfectpixel
+.userInfo__title {
+	margin-top: 49px;
+  margin-left: 21px;
+}
+.userInfo__titleText {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 0.2s;
+	  
+
+}
+.userInfo__titleDescribe {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 0.4s;
+}
+
+.userInfo__block-LastName {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 0.6s;
+	padding-left: 4px;
+    padding-bottom: 15px;
+    margin-top: 14px;
+
+}
+
+.userInfo__block-FirstName {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 0.8s;
+	margin-left: 0px;
+    margin-right: 2px;
+    padding-top: -14px;
+		padding-right: 12px;
+		margin-top: 14px;
+}
+
+.userInfo__block-Country {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1s;
+	margin-top: 5px;
+    margin-left: 6px;
+    padding-right: 12px;
+    padding-left: 6px
+}
+
+.userInfo__block-email {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1.2s;
+	margin-top: 6px;
+    margin-bottom: 20px;
+    margin-right: 2;
+    padding-left: 2px;
+}
+
+.userInfo__block-dateOfBrith {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1.4s;
+	margin-top: -18px;
+    margin-bottom: 0px;
+    padding-bottom: 9px;
+    padding-top: 0px;
+}
+
+.userInfo__block-Gender {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1.6s;
+	margin-top: -5px;
+}
+
+.userInfo__block-Password {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1.8s;
+}
+
+.userInfo__block-ConfirmPassword {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2s;
+}
+
+.userInfo__label-anim {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2.2s;
+}
+
+.submit-anim {
+	opacity:0; 
+	transition: 1s;
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2.4s;
+}
 //блок input
 .userInfo {
 	width: 78%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background: #FFFFFF;
 }
 
 //Заголовок формы
@@ -86,6 +221,7 @@
 	display: flex;
 	border: none;
 	margin-top: 20px;
+	
 }
 //блок Gender
 .userInfo__legend {
@@ -129,6 +265,11 @@
 	color: #7C7C7C;
 	border: none;
 }
+.email {
+	background-image: url('../assets/img/ok.svg');
+	background-repeat: no-repeat;
+	background-position: right;
+}
 //кнопка отправки
 .userInfo__block-footer {
 	display: flex;
@@ -136,6 +277,8 @@
 	width: 100%;
 	flex-wrap: nowrap;
 	border: none;
+	justify-content: space-between;
+	
 }
 .userInfo__label-footer {
 	
@@ -158,7 +301,53 @@
 	font-size: 14px;
 	line-height: 18px;
 	color: #FFFFFF;
+	
 }
 .userInfo__title-footer {
 	width: 45%;
 }
+
+//форма день рождения
+.Day, .Month, .Year {
+	border: none;
+	font-family: 'WorkSans-Regular';
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #111111;
+}
+
+//анимация
+@keyframes show{
+	0%{
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+	
+}
+
+//стилизация стрелок
+.Day, .Month, .Year, .Country {
+	-webkit-appearance: none;/* Chrome */
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../assets/img/Shape.svg') no-repeat;
+	background-position: right;
+}
+.Day {
+	width: 16%;
+	margin-right: 10px;
+}
+.Month {
+	width: 40%;
+	margin-right: 10px;
+}
+.Year {
+	width: 27%;
+}
+
+

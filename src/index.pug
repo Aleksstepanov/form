@@ -11,45 +11,47 @@ html(lang="en")
 				.userInfo__title
 					.userInfo__titleText New user?
 					.userInfo__titleDescribe Use the form below to create your account.
-				form.userInfo__form(name="Signup")
+				form.userInfo__form(name="Signup" id="Signup" novalidate)
 					.userInfo__wrapper
-						fieldset.userInfo__block
-							label(class="userInfo__label" for="LastName") Last Name
-							input(type="text" name="LastName" class="baseInput" id="LastName")
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-FirstName")
 							label(class="userInfo__label" for="FirstName") First Name
 							input(type="text" name="FirstName" class="baseInput" id="FirstName")
+						fieldset(class="userInfo__block userInfo__block-LastName")
+							label(class="userInfo__label" for="LastName") Last Name
+							input(type="text" name="LastName" class="baseInput" id="LastName")
 					.userInfo__wrapper
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-Country")
 							label(class="userInfo__label" for="Country") Nationality
-								select(name="Country" size="1" class="baseInput" id="Country")
+								select(name="Country" size="1" class="baseInput Country" id="Country")
 								
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-email")
 							label(class="userInfo__label" for="email") E-mail
 							input(type="email" name="email" class="baseInput" id="email")
 					.userInfo__wrapper
-						fieldset(class="userInfo__block")
-							legend(class="userInfo__label") Date of Birth
-								select(name="day" class="Day")
-								select(name="month" class="Month")
-								select(name="year" class="Year")
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-dateOfBrith")
+							p(class="userInfo__label") Date of Birth
+								.dateOfBrirth
+									select(name="day" class="Day")
+									select(name="month" class="Month")
+									select(name="year" class="Year")
+						fieldset(class="userInfo__block userInfo__block-Gender")
 							legend(class="userInfo__legend") Gender
 							.userInfo__GenderWrapper
 								label(class="userInfo__label-Gender") Male
-									input(name="Gender" type="radio" value="Male")
+									input(name="Gender" id="Male" type="radio" value="Male" checked)
 								label(class="userInfo__label-Gender") Female
-									input(name="Gender" type="radio" value="Female") 
+									input(name="Gender" id="Female" type="radio" value="Female") 
 					.userInfo__wrapper
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-Password")
 							label(class="userInfo__label" for="Password") Password
 							input(type="Password" name="Password" class="baseInput" id="Password")
-						fieldset(class="userInfo__block")
+						fieldset(class="userInfo__block userInfo__block-ConfirmPassword")
 							label(class="userInfo__label" for="ConfirmPassword") Confirm Password
 							input(type="Password" name="ConfirmPassword" class="baseInput" id="ConfirmPassword")
 					.userInfo__wrapper
 						div(class="userInfo__block-footer")
 							.userInfo__title-footer
-								p(class="userInfo__label-footer") Have an account? 
+								p(class="userInfo__label-footer userInfo__label-anim") Have an account? 
 									a(class="userInfo__link") Login
-							input(type="submit" name="submit" value="Complete Signup" class="baseInput submit")
+							input(type="submit" name="SubMit" value="Complete Signup" class="baseInput submit submit-anim" id='SubMit')
+					
