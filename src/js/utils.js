@@ -10,6 +10,7 @@ HtmlVariables.Email.addEventListener('change', (event) => {
 	const newUser = new Forms({
 		email : HtmlVariables.Email.value
 		});
+	isValid(newUser.email.length)>0 ? HtmlVariables.Email.style.borderBottom = '2px solid #FF2828' :  HtmlVariables.Email.style.borderBottom = 'none'; 
 	if (!newUser.isValidEmail()) {
 		HtmlVariables.Email.style.color = '#FF2222';
 		HtmlVariables.Email.style.borderBottom = '2px solid #FF2828';

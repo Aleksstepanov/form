@@ -44,6 +44,9 @@ function submitClick(event) {
 		confirmPassword : HtmlVariables.ConfirmPassword.value
 });
 	
+	(!isValid(newUser.firstName)) ? HtmlVariables.FirstName.style.borderBottom = '2px solid #FF2828' :  HtmlVariables.FirstName.style.borderBottom = 'none';
+	(!isValid(newUser.lastName)) ? HtmlVariables.LastName.style.borderBottom = '2px solid #FF2828' :  HtmlVariables.FirstName.style.borderBottom = 'none';	
+	(!isValid(newUser.email)) ? HtmlVariables.Email.style.borderBottom = '2px solid #FF2828' : HtmlVariables.Email.style.borderBottom = 'none;'
 	//проверка совпадений паролей
 	if (!newUser.isPassword() && newUser.isValidPassword()) {
 		alert("Passwords don't match");
@@ -59,11 +62,10 @@ function submitClick(event) {
 		HtmlVariables.SubmitBtn.disabled = false;
 	}
 
-	(!newUser.isValid(HtmlVariables.FirstName.value)) ? HtmlVariables.FirstName.style.borderBottom = '2px solid #FF2828' :  HtmlVariables.FirstName.style.borderBottom = 'none';
-	(!newUser.isValid(HtmlVariables.LastName.value)) ? HtmlVariables.LastName.style.borderBottom = '2px solid #FF2828' :  HtmlVariables.FirstName.style.borderBottom = 'none';	
+	
 
-	if (newUser.isPassword() && newUser.isValidPassword() && newUser.isValidEmail() && newUser.isValid(HtmlVariables.FirstName.value)){
-			//HtmlVariables.SubmitBtn.disabled = true;
+	if (newUser.isPassword() && newUser.isValidPassword() && newUser.isValidEmail() && isValid(newUser.firstName) && isValid(newUser.lastName)){
+			
 			sendRequest('POST',requestURL,newUser);
 			console.log(newUser);
 			HtmlVariables.UserInfoForm.style.display = 'none';
